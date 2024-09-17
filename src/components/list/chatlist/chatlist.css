@@ -1,0 +1,64 @@
+.chatlist{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    .searchusers{
+        flex:1;
+        display: flex;
+        align-items: center;
+        gap:20px;
+        padding: 20px;
+        .searchbar{
+            flex:1;
+            display: flex;
+            align-items: center;
+            background-color: rgba(20, 16, 40, 0.75);
+            border-radius: 10px;
+            padding: 10px;
+            input{
+                background-color: transparent;
+                border:none;
+                outline: none;
+                color: white;
+                flex:1;
+                padding-left: 10px;
+            }
+            img{
+                width:20px;
+                height:20px;
+            }
+        }
+        .addnew{
+                width: 30px;
+                height: 30px;
+                padding: 8px;
+                background-color: rgba(20, 16, 40, 0.75);
+                border-radius: 10px;
+                cursor: pointer;
+        }
+    }
+    .msngrs{
+        display:flex;
+        flex-direction: column;
+        .msngr{
+            display: flex;
+            padding:20px;
+            gap:20px;
+            border-bottom: 1px solid #dddddd35;
+            img{
+                width:35px;
+                height: 35px;
+                border-radius: 50%;
+            }
+            .msg{
+                span{
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
